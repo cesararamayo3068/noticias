@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent implements OnInit {
+  categoriaSeleccionada='general ';
+  paisSeleccionado='ar';
+
 categorias:any[]=[
   {value:'general' , nombre:'General'},
   {value:'business' , nombre:'Negocios'},
@@ -33,5 +36,11 @@ paises:any[]=[
 
   ngOnInit(): void {
   }
+
+buscarNoticia(){
+  console.log(this.paisSeleccionado);
+  console.log(this.categoriaSeleccionada);
+}
+
 
 }

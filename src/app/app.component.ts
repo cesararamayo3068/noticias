@@ -15,5 +15,9 @@ constructor(private _noticiaService :NoticiaService){
 buscarNoticias(parametros:any){
  console.log('soy el padre');
  console.log(parametros);
+
+ this._noticiaService.getNoticias(parametros).subscribe(data => {
+   console.log(data);
+ })
 }
 }
